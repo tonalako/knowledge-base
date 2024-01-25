@@ -1,0 +1,44 @@
+[
+  {
+    "ID": "5f4900b8-8302-4088-a33c-60a8a4332cb4",
+    "title": "docusaurus",
+    "alt": "docusaurus png",
+    "image": "static/img/1656076947472_docusaurus.png",
+    "createdAt": 1656076950111
+  },
+  {
+    "ID": "e602a1ae-15e2-4c28-b1a9-a8de82404333",
+    "title": "logo",
+    "alt": "logo svg",
+    "image": "static/img/1656076964449_logo.svg",
+    "createdAt": 1656076971366
+  },
+  {
+    "ID": "a52af45b-534d-4896-a300-45c6d4840dec",
+    "title": "favicon",
+    "alt": "favicon.ico",
+    "image": "static/img/1656076982585_favicon.ico",
+    "createdAt": 1656076993254
+  },
+  {
+    "ID": "7c9f70e2-70e0-414b-942b-8d15c598d6c2",
+    "title": "Locale Dropdown",
+    "alt": "locale dropdown png",
+    "image": "static/img/1656077027872_localeDropdown.png",
+    "createdAt": 1656077047648
+  },
+  {
+    "ID": "cab04655-ccee-4582-9b08-c1ed00bff61b",
+    "title": "Docs Version Dropdown",
+    "alt": "docs version dropdown png",
+    "image": "static/img/1656077058280_docsVersionDropdown.png",
+    "createdAt": 1656077082310
+  },
+  {
+    "ID": "f330609b-9c7c-41dc-91b9-8dc8286ef1b4",
+    "title": "Docusaurus plushie banner",
+    "alt": "Docusaurus plushie banner jpg",
+    "image": "static/img/1656077119008_docusaurus-plushie-banner.jpeg",
+    "createdAt": 1656077159959
+  }
+]

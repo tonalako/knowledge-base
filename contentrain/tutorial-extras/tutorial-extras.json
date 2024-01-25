@@ -1,0 +1,31 @@
+[
+  {
+    "content": "\n# Manage Docs Versions\n\nDocusaurus can manage multiple versions of your docs.\n\n## Create a docs version\n\nRelease a version 1.0 of your project:\n\n```bash\nnpm run docusaurus docs:version 1.0\n```\n\nThe `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.\n\nYour docs now have 2 versions:\n\n- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs\n- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**\n\n## Add a Version Dropdown\n\nTo navigate seamlessly across versions, add a version dropdown.\n\nModify the `docusaurus.config.js` file:\n\n```js title=\"docusaurus.config.js\"\nmodule.exports = {\n  themeConfig: {\n    navbar: {\n      items: [\n        // highlight-start\n        {\n          type: 'docsVersionDropdown',\n        },\n        // highlight-end\n      ],\n    },\n  },\n};\n```\n\nThe docs version dropdown appears in your navbar:\n\n![Docs Version Dropdown](../../static/img/1656077058280_docsVersionDropdown.png)\n\n## Update an existing version\n\nIt is possible to edit versioned docs in their respective folder:\n\n- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`\n- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`\n",
+    "ID": "adbf1eeb-9158-46fb-95bb-8e11dbf1b4ae",
+    "slug": "manage-docs-versions",
+    "sidebar-position": "1",
+    "category": {
+      "ID": "c08f0ab4-5876-40b5-9fe8-bebb2072a413",
+      "label": "Tutorial - Extras",
+      "position": 3,
+      "link": {
+        "ID": "39af281f-80b6-4193-8559-120c5846c249",
+        "type": "generated-index",
+        "description": "Lorem",
+        "createdAt": 1656065644293
+      },
+      "createdAt": 1656065625742
+    },
+    "createdAt": 1656065361236,
+    "updatedAt": 1656079525736
+  },
+  {
+    "content": "# Translate your site\n\nLet's translate `docs/intro.md` to French.\n\n## Configure i18n\n\nModify `docusaurus.config.js` to add support for the `fr` locale:\n\n```js title=\"docusaurus.config.js\"\nmodule.exports = {\n  i18n: {\n    defaultLocale: 'en',\n    locales: ['en', 'fr'],\n  },\n};\n```\n\n## Translate a doc\n\nCopy the `docs/intro.md` file to the `i18n/fr` folder:\n\n```bash\nmkdir -p i18n/fr/docusaurus-plugin-content-docs/current/\n\ncp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md\n```\n\nTranslate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.\n\n## Start your localized site\n\nStart your site on the French locale:\n\n```bash\nnpm run start -- --locale fr\n```\n\nYour localized site is accessible at `http://localhost:3000/fr/` and the `Getting Started` page is translated.\n\n:::caution\n\nIn development, you can only use one locale at a same time.\n\n:::\n\n## Add a Locale Dropdown\n\nTo navigate seamlessly across languages, add a locale dropdown.\n\nModify the `docusaurus.config.js` file:\n\n```js title=\"docusaurus.config.js\"\nmodule.exports = {\n  themeConfig: {\n    navbar: {\n      items: [\n        // highlight-start\n        {\n          type: 'localeDropdown',\n        },\n        // highlight-end\n      ],\n    },\n  },\n};\n```\n\nThe locale dropdown now appears in your navbar:\n\n![Locale Dropdown](../../static/img/1656077027872_localeDropdown.png)\n\n## Build your localized site\n\nBuild your site for a specific locale:\n\n```bash\nnpm run build -- --locale fr\n```\n\nOr build your site to include all the locales at once:\n\n```bash\nnpm run build\n```",
+    "ID": "e8bfaf1f-6b90-499c-98c1-aed18b427ff4",
+    "slug": "translate-your-site",
+    "sidebar-position": "2",
+    "category": [],
+    "createdAt": 1656065385806,
+    "updatedAt": 1656079541941
+  }
+]
